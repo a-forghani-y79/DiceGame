@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" rotate="-0.0" style="-fx-background-color: #a8f5ff;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.multyPlayerController">
+   <children>
+      <MenuButton fx:id="menuP1" layoutX="15.0" layoutY="72.0" mnemonicParsing="false" pickOnBounds="false" popupSide="RIGHT" style="-fx-background-color: #4d4d4d00;">
+        <items>
+          <MenuItem fx:id="menuItem1P1" mnemonicParsing="false" onAction="#selectImageP1">
+               <graphic>
+                  <ImageView fx:id="img1P1" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV1.png" />
+                     </image></ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem2P1" mnemonicParsing="false" onAction="#selectImageP1">
+                <graphic>
+                   <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                         <Image url="@../PNG/AV2.png" />
+                      </image>
+                   </ImageView>
+
+                </graphic>
+
+
+
+            </MenuItem>
+            <MenuItem fx:id="menuItem3P1" mnemonicParsing="false" onAction="#selectImageP1">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem4P1" mnemonicParsing="false" onAction="#selectImageP1">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem5P1" mnemonicParsing="false" onAction="#selectImageP1">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem6P1" mnemonicParsing="false" onAction="#selectImageP1">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV6.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+        </items>
+         <graphic>
+            <ImageView fx:id="imgPreviewP1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../PNG/AV1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+      <Label layoutX="28.0" layoutY="14.0" text="Player One">
+         <font>
+            <Font name="Mj_AUres Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="14.0" text="Player Two">
+         <font>
+            <Font name="Mj_AUres Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameP1" labelFloat="true" layoutX="17.0" layoutY="252.0" prefHeight="26.0" prefWidth="184.0" promptText="Enter Name" />
+      <JFXTextField fx:id="nameP2" labelFloat="true" layoutX="403.0" layoutY="252.0" prefHeight="26.0" prefWidth="184.0" promptText="Enter Name" />
+      <JFXTextField fx:id="goal" alignment="CENTER" labelFloat="true" layoutX="259.0" layoutY="133.0" prefHeight="37.0" prefWidth="82.0" promptText="Enter Goal" unFocusColor="#4d4d4d">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnLetsGo" layoutX="259.0" layoutY="250.0" onAction="#onClickBtnLetsGo" style="-fx-background-color: #00a1f7;" text="Let's Go !">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <MenuButton fx:id="menuP2" layoutX="402.0" layoutY="66.0" mnemonicParsing="false" pickOnBounds="false" popupSide="LEFT" rotate="180.0" style="-fx-background-color: #4d4d4d00;">
+         <items>
+            <MenuItem fx:id="menuItem1P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem2P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem3P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem4P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV4.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem5P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="menuItem6P2" mnemonicParsing="false" onAction="#selectImageP2">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../PNG/AV6.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+         </items>
+         <graphic>
+            <ImageView fx:id="imgPreviewP2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../PNG/AV3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+   </children>
+</AnchorPane>

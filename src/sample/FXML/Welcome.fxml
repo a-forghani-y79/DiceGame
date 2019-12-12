@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: #448aff;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.welcomeController">
+   <children>
+      <Label fx:id="lblWelcom" layoutX="118.0" layoutY="95.0" opacity="0.0" text="Welcome" textFill="#bb002f">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDice" layoutY="164.0" opacity="0.0" text="Dice" textFill="#e02b82">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGame" layoutX="211.0" layoutY="164.0" opacity="0.0" text="Game" textFill="#e02b82f0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <JFXSpinner fx:id="spinner" blendMode="COLOR_BURN" layoutX="145.0" layoutY="255.0" opacity="0.0" />
+      <JFXButton fx:id="btnStart" onAction="#onClick" buttonType="RAISED" layoutX="127.0" layoutY="176.0" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: #1a20d9;" text="Start" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font name="Amoebic" size="19.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

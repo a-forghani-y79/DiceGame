@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bundles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/DiceGame/bundles/DiceGame.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/DiceGame/bundles/jfoenix-8.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eab7e7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ciscoController">
+   <children>
+      <Text fill="#ed1111" layoutX="262.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal" wrappingWidth="75.98307228088379">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imageCP1" fitHeight="137.0" fitWidth="136.0" layoutX="63.0" layoutY="70.0" pickOnBounds="true" />
+      <ImageView fx:id="imageCP2" fitHeight="137.0" fitWidth="136.0" layoutX="408.0" layoutY="70.0" pickOnBounds="true" />
+      <Text fx:id="nameCP1" layoutX="62.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player 1" textAlignment="CENTER" wrappingWidth="138.9830722808838">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnCRoll" layoutX="244.0" layoutY="234.0" onAction="#onClickRoll" prefHeight="76.0" prefWidth="112.0" style="-fx-background-color: #b10529;" text="Roll" textFill="WHITE">
+         <font>
+            <Font name="Mj_Fantezy " size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="goalC" layoutX="285.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalCP1" layoutX="70.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tottal Score: 25">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalCP2" layoutX="415.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tottal Score: 25">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameCP2" layoutX="407.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player 2" textAlignment="CENTER" wrappingWidth="138.9830722808838">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnMainMenu" disable="true" layoutX="232.0" layoutY="325.0" mnemonicParsing="false" onAction="#onClickMAinMenu" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #4a148c;" text="Main Menu" textFill="WHITE" visible="false" />
+      <Text fx:id="txtStatus" layoutX="178.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="243.1953125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
