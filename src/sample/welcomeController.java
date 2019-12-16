@@ -102,7 +102,7 @@ public class welcomeController implements Initializable {
             stage = (Stage) btnStart.getScene().getWindow();
             stage.close();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML/mainMenu.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML/MainMenu.fxml"));
             loader.setController(mainMenuController);
             root = loader.load();
             stage = new Stage();

@@ -17,6 +17,8 @@ public class mainMenuController implements Initializable {
 
     @FXML
     JFXButton btnMulty;
+    @FXML
+    JFXButton btnSingle;
     double x = 0;
     double y = 0;
     private multyPlayerController multyPlayerController;
@@ -29,6 +31,11 @@ public class mainMenuController implements Initializable {
     @FXML
     public void onClickMultiPlayer() {
         switchOnNew(btnMulty, "FXML/MultiPlayer.fxml");
+
+    }
+    @FXML
+    public void onClickSinglePlayer(){
+        switchOnNew(btnSingle,"FXML/SinglePlayer.fxml");
 
     }
 

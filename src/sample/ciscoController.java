@@ -48,8 +48,6 @@ public class ciscoController implements Initializable {
 
 
     public void onClickRoll() {
-
-
         if (total2 < goal && total1 < goal) {
             if (flag) {
                 int dice = (int) (Math.random() * 5 + 1);
@@ -77,7 +75,6 @@ public class ciscoController implements Initializable {
             btnMainMenu.setDisable(false);
             btnMainMenu.setVisible(true);
         }
-
     }
 
     public void onClickMAinMenu() {

@@ -3,7 +3,6 @@ package sample;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -19,69 +18,20 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class multyPlayerController implements Initializable {
+public class singlePlayerController implements Initializable {
 
 
     public ImageView imgPreviewP1;
-    public ImageView imgPreviewP2;
+    
     public JFXTextField nameP1;
     public JFXTextField goal;
     public JFXTextField nameP2;
     public JFXButton btnLetsGo;
     String[] data = new String[5];
     int imageNumberP1 = 1;
-    int imageNumberP2 = 3;
+    int imageNumberP2 = 7;
     double x = 0, y = 0;
     private Object ciscoController;
-
-
-    public void selectImageP2(ActionEvent event) {
-
-        MenuItem menuItem = (MenuItem) event.getSource();
-        switch (menuItem.getId().charAt(8)) {
-            case '1':
-                File file1 = new File("src/sample/PNG/AV1.png");
-                imgPreviewP2.setImage(new Image(file1.toURI().toString()));
-                imageNumberP2 = 1;
-                break;
-            case '2':
-                File file2 = new File("src/sample/PNG/AV2.png");
-                imgPreviewP2.setImage(new Image(file2.toURI().toString()));
-                imageNumberP2 = 2;
-
-                break;
-            case '3':
-                File file3 = new File("src/sample/PNG/AV3.png");
-                imgPreviewP2.setImage(new Image(file3.toURI().toString()));
-                imageNumberP2 = 3;
-
-                break;
-            case '4':
-                File file4 = new File("src/sample/PNG/AV4.png");
-                imgPreviewP2.setImage(new Image(file4.toURI().toString()));
-                imageNumberP2 = 4;
-
-                break;
-            case '5':
-                File file5 = new File("src/sample/PNG/AV5.png");
-                imgPreviewP2.setImage(new Image(file5.toURI().toString()));
-                imageNumberP2 = 5;
-
-                break;
-            case '6':
-                File file6 = new File("src/sample/PNG/AV6.png");
-                imgPreviewP2.setImage(new Image(file6.toURI().toString()));
-                imageNumberP2 = 6;
-
-                break;
-
-
-            default:
-                break;
-        }
-
-
-    }
 
 
     public void selectImageP1(ActionEvent event) {
@@ -173,11 +123,13 @@ public class multyPlayerController implements Initializable {
 
 
     }
-
-
-
+    
+    
+    
+    
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        
     }
 }

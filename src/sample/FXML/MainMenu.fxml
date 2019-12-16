@@ -7,7 +7,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #005ecb;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainMenuController">
    <children>
       <JFXButton layoutX="124.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefWidth="1.0" text="Button" />
-      <JFXButton fx:id="btnSingle" buttonType="RAISED" layoutX="50.0" layoutY="80.0" prefWidth="200.0" style="-fx-background-color: #83b9ff;" text="SinglePlayer" textAlignment="CENTER" textFill="#c41025">
+      <JFXButton fx:id="btnSingle" onAction="#onClickSinglePlayer" buttonType="RAISED" layoutX="50.0" layoutY="80.0" prefWidth="200.0" style="-fx-background-color: #83b9ff;" text="SinglePlayer" textAlignment="CENTER" textFill="#c41025">
          <font>
             <Font name="Mj_Calligraph" size="25.0" />
          </font>
